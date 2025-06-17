@@ -16,7 +16,7 @@ header h1 {
      rgb(255,0,0) 20%,
      rgb(255,255,255) 30%
     );
-    background-clip: text; /* Para que el degradad aparezca solo dentro de
+    background-clip: text; /* Para que el degradado aparezca solo dentro de
             las letras*/
     color: transparent; /* Esto también es necesario para que funcione
         el degradado */
@@ -130,4 +130,34 @@ main {
             para que el pie vaya debajo de todo */
 }
 
+@media (max-width: 830px) {
+    .contenedorKanji {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media (max-width: 670px) {
+    .contenedorKanji {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (max-width: 500px) {
+    .contenedorKanji {
+        grid-template-columns: repeat(2, auto);
+        column-gap: 3em;
+    }
+    #informacion {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    #informacion a {
+        width: 90%;
+    }
+
+}
+@media (max-width: 380px) {
+    .contenedorKanji {
+        column-gap: 2em;
+    }
+}
 
