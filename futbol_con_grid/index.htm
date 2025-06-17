@@ -14,6 +14,8 @@
             font-size: 3rem;
             color: white;
             text-align: center;
+             max-width: 1200px;
+             margin: auto;
         }
         header span {
             color:black;
@@ -60,18 +62,36 @@
             }
         }*/
         main {
-            display: flex;
-            flex-direction: row-reverse;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             column-gap: 20px;
             row-gap: 80px; /* Podemos poner gap: 20px para row y column a la vez */
-            flex-wrap: wrap; /* Para que las cajas que no quepan
-                    en la misma fila, las baje a la siguiente */
         }
-        main section {
-            /* Estas dos para que todas tengan el mismo ancho */
-            flex-basis: 0;
-            flex-grow: 1;
+        @media (max-width:1000px) {
+            header {
+                font-size: 2rem;
+                margin-bottom: 80px;
+            }
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
+        @media (max-width:750px) {
+            header {
+                font-size: 1rem;
+            }
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width:550px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
 
