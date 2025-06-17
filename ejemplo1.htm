@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:20px;
+            max-width: 1200px;
+        }
+        header {
+            font-size: 4rem;
+        }
+        @media (max-width:1000px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+            header {
+                font-size: 3rem;
+            }
+        }
+        @media (max-width:600px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            header {
+                font-size: 2rem;
+            }
+        }
+
+   
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <main class="clearfix">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi expedita cum quas numquam! Quasi aliquid
+            sapiente molestiae magnam, odio ullam iure autem, repudiandae alias beatae aspernatur sint iusto et neque
+            quisquam. Vel eum aliquid facilis similique. Totam, eveniet inventore exercitationem perferendis sint, optio
+            alias enim voluptate quae quis molestias nihil!</div>
+        <div>Quisquam maiores quibusdam, voluptatem voluptas possimus aspernatur autem labore ipsam, iste, eveniet quam
+            a similique voluptates neque sed id aliquid alias rem! Id maiores doloribus obcaecati vero repudiandae
+            possimus voluptatum illum, cum ipsa at nemo autem ipsum, dolorem ut beatae harum aspernatur aliquam? Vero
+            expedita voluptatem, minima eveniet quaerat esse.</div>
+        <div>Debitis voluptatem a magnam fugit iure consequatur accusantium, natus harum id dolor laboriosam repellat
+            explicabo nesciunt voluptas praesentium, sapiente repellendus porro est nam! Expedita, nam accusamus?
+            Tempore, aliquam, inventore voluptates dolores impedit deserunt vero aut corporis magnam architecto in ipsa
+            esse obcaecati fugit eligendi, nam aspernatur enim deleniti natus eos.</div>
+    </main>
+</body>
+
+</html>
