@@ -130,15 +130,26 @@ main {
             para que el pie vaya debajo de todo */
 }
 
-@media (max-width: 830px) {
+@media (max-width: 900px) {
     .contenedorKanji {
         grid-template-columns: repeat(4, auto);
     }
+    header h1 {
+        font-size: 8em;
+    }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 730px) {
     .contenedorKanji {
         grid-template-columns: repeat(3, auto);
+    }
+    header nav {
+        flex-wrap: wrap;
+        row-gap: 25px;
+        justify-content: flex-start;
+    }
+    header h1 {
+        font-size: 5em;
     }
 }
 @media (max-width: 500px) {
@@ -153,7 +164,9 @@ main {
     #informacion a {
         width: 90%;
     }
-
+    header h1 {
+        font-size: 3em;
+    }
 }
 @media (max-width: 380px) {
     .contenedorKanji {
