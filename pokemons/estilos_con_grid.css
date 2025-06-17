@@ -115,3 +115,41 @@ main {
     order: -1; /* El orden por defecto es 0, con lo que poniendo un valor menor,
         se pone antes*/
 }
+
+/* Opción fácil pero queda bastante espacio desaprovechado 
+@media (max-width:970px) {
+    main {
+         grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width:640px) {
+    main {
+         grid-template-columns: auto;
+    }
+}*/
+
+@media (max-width:970px) {
+   .carta {
+        width: 100%; /* esto podría hacerlo diectamente en 
+                    el css "normal" */
+   }
+   .carta > img {
+        width: 100%; /* esto podría hacerlo diectamente en 
+                    el css "normal" */
+   }
+   .carta .pokebola{
+        width: 50%;/* esto podría hacerlo diectamente en 
+                    el css "normal" */
+    }
+}
+@media (max-width:866px) {
+    .carta {
+        width: 85%;
+        min-width: 150px;
+    }
+}
+@media (max-width:536px) {
+    main {
+        grid-template-columns: auto auto;
+    }
+}
